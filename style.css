@@ -5,8 +5,26 @@ header{
     color: white;
     background-color: #000000;
     padding: 3rem 2rem;
+    align-items: center;
+    
 }
-header,h1{
+header h1, header p {
+    font-size: 4rem; /* Tamaño por defecto */
+}
+
+@media screen and (max-width: 768px) { /* Cuando la pantalla es menor o igual a 768px */
+    header h1, header p {
+        font-size: 3rem; /* Reducimos el tamaño del título y el párrafo */
+    }
+}
+
+@media screen and (max-width: 576px) { /* Cuando la pantalla es menor o igual a 576px */
+    header h1, header p {
+        font-size: 2rem; /* Reducimos aún más el tamaño del título y el párrafo */
+    }
+}
+
+header ,h1{
     font-size: 4rem;
     text-align: center;
 }
