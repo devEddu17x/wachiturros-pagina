@@ -1,0 +1,117 @@
+html{
+    font-family: 'Inter', sans-serif;
+}
+header{
+    color: white;
+    background-color: #000000;
+    padding: 3rem 2rem;
+}
+header,h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+body{
+    margin: 0px;
+    background-color: #121212;
+}
+main{
+    margin: 3rem 0;
+}
+#subitulo{
+    color: #e41768;
+    font-size: 1rem;
+}
+
+.container{
+    width: 40rem;
+    margin: 0 auto;
+}
+
+.container .top-globales, .container .top{
+    transition: all 0.3s ease;
+    background-color: #000000;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.head h2{
+    margin: 1rem;
+    display: inline-block;
+}
+
+.container article p{
+    margin: 1rem;
+}
+.container article:hover{
+    box-shadow: 0.1rem 0.1rem 0.4rem rgba(255, 255, 255, 0.7);
+}
+
+section p{
+    color: white;
+}
+section h3{
+    text-align: center;
+    color: white;
+}
+
+.imagenes{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 0 auto 3rem;
+    border-radius: 2rem;
+}
+
+#dorado{
+    color:  #FFD700;
+    font-size: 2rem;
+}
+#plata{
+    color: #C0C0C0;
+    font-size: 2rem;
+}
+
+#bronce{
+    color: #CD7F32;
+    font-size: 2rem;
+
+}
+.head{
+    color: #e41768;
+    font-size: 1.6rem;
+
+}
+
+.numero-top{
+    font-size: 3.6rem;
+}
+
+footer{
+    color: white;
+    padding: 1rem 3rem;
+    background-color: #000000;
+}
+
+footer section{
+    float: right;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer a{
+    transition: all 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
+
