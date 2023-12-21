@@ -5,8 +5,8 @@
 }
 
 body {
-    background-color: #27232c;
-    color: black;
+    background-color: #352F44;
+    color: #FAF0E6;
 }
 
 .container {
@@ -115,7 +115,7 @@ body {
     grid-area: tercero;
 }
 #dorado{
-    color:  #FFD700;
+    color:  #ffd900;
     font-size: 2rem;
 }
 #plata{
@@ -124,12 +124,12 @@ body {
 }
 
 #bronce{
-    color: #CD7F32;
+    color: #ca6a0b;
     font-size: 2rem;
 }
 
 .top-globales{
-    background-color: white;
+    background-color: #110a17;
     border-radius: 10px;
     transition: all 0.2s ease;
 
@@ -138,7 +138,7 @@ body {
 /* todo referente al aside */
 .aside{
     grid-area: aside;
-    background-color: crimson;
+    background-color: #110a17;
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -157,13 +157,17 @@ body {
 }
 
 /* tops */
-.top-globales:hover, .top:hover{
+.top-globales:hover{
     cursor:pointer;
-    box-shadow: 0.1rem 0.1rem 0.4rem #e41768;
+    box-shadow: 0.1rem 0.1rem 0.4rem #110a17;
+}
+.top:hover{
+    cursor:pointer;
+    box-shadow: 0.1rem 0.1rem 0.4rem #5C5470;
 }
 
 .top{
-    background-color: white;
+    background-color: #110a17;
     border-radius: 10px;
     transition: all 0.2s ease;
 
