@@ -5,33 +5,67 @@
 }
 
 body {
-    background-color: #e9ecf4;
+    background-color: #27232c;
     color: black;
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 40px auto;
     /* desplegando cuadricula */
     display: grid;
     gap: 20px;
     /* estableciendo columnas y filas */
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "header"
-                        "main"
-                        "aside"
-                        "footer";
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "main"
+                        "aside";
 }
 
-.header, .footer {
+.header{
+    width: 100%;
     color: white;
-    padding: 20px;
-    border-radius: 10px;
     grid-area: header;
     text-align: center;
-    background-color: blueviolet;
+    background-color: #110a17;
+}
+
+.titulo{
+    padding: 20px;
+}
+
+.barra{
+    display: flex;
+    min-height: 70px;
+    font-size: 13px;
+    background-color: #673ab7;
+    justify-content: space-between;
+    align-items: center;
+}
+.barra img{
+    width: 70px;
+    padding: 15px;
+    border-radius: 70px;
+}
+
+.barra nav{
+    padding: 0px 20px 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.footer {
+    color: white;
+    padding: 20px 20px 40px;
+    grid-area: header;
+    text-align: center;
+    background-color: #110a17;
 }
 /* todo referente a imagenes */
 .imagenes{
@@ -50,6 +84,7 @@ body {
     grid-template-areas: "primero primero segundo"
                             "primero primero tercero";
 }
+
 
 .head h2{
     padding: 1rem;
@@ -107,9 +142,18 @@ body {
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     gap: 20px;
     padding: 20px;
-    grid-template-areas: "agustin gabo";
+    grid-template-areas: "agustin gabo"
+                            "agustin gabo";
+}
+
+#agustin{
+    grid-area: agustin;
+}
+#gabo{
+    grid-area: gabo;
 }
 
 /* tops */
@@ -141,12 +185,12 @@ body {
 .footer section{
     float: right;
 }
-.footer section a{
+.nav{
     transition: all 0.3s ease;
     color: white;
     text-decoration: none;
 }
-.footer section a:hover{
+.nav:hover{
     cursor:pointer;
     color:  firebrick;
 }
@@ -155,3 +199,21 @@ body {
 }
 
 
+@media screen and (max-width: 768px){
+    .barra{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    .main{
+        grid-template-areas: "primero primero primero"
+                            "segundo segundo segundo"
+                            "tercero tercero tercero";
+    }
+    .aside{
+        grid-template-areas: "agustin agustin" 
+                                "gabo gabo";
+    }
+}
