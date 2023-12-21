@@ -1,0 +1,157 @@
+* {
+    font-family: 'inter';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e9ecf4;
+    color: black;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    /* desplegando cuadricula */
+    display: grid;
+    gap: 20px;
+    /* estableciendo columnas y filas */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header"
+                        "main"
+                        "aside"
+                        "footer";
+}
+
+.header, .footer {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    grid-area: header;
+    text-align: center;
+    background-color: blueviolet;
+}
+/* todo referente a imagenes */
+.imagenes{
+    max-width: 100%;
+    border-radius: 10px;
+}
+/* todo referente al main  */
+.main{
+    grid-area: main;
+    background-color: e9ecf4;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    grid-template-areas: "primero primero segundo"
+                            "primero primero tercero";
+}
+
+.head h2{
+    padding: 1rem;
+    display: inline-block;
+}
+
+.top-globales h3, .top h3{
+
+    padding: 0px 20px 20px;
+    
+    text-align: center;
+}
+
+.top-globales div, .top div{
+    margin: 0px 0px 20px;
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    text-align: center;
+}
+
+#primero{
+    grid-area: primero;
+}
+#segundo{
+    grid-area: segundo;
+}
+#tercero{
+    grid-area: tercero;
+}
+#dorado{
+    color:  #FFD700;
+    font-size: 2rem;
+}
+#plata{
+    color: #C0C0C0;
+    font-size: 2rem;
+}
+
+#bronce{
+    color: #CD7F32;
+    font-size: 2rem;
+}
+
+.top-globales{
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+
+}
+
+/* todo referente al aside */
+.aside{
+    grid-area: aside;
+    background-color: crimson;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    grid-template-areas: "agustin gabo";
+}
+
+/* tops */
+.top-globales:hover, .top:hover{
+    cursor:pointer;
+    box-shadow: 0.1rem 0.1rem 0.4rem #e41768;
+}
+
+.top{
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+
+}
+
+.top .head{
+    color: #e41768;
+    font-size: 2rem;
+}
+
+.numero , .numero-top{
+    font-size: 5rem;
+}
+
+/* todo referente al footer */
+.footer{
+    grid-area: footer;
+}
+.footer section{
+    float: right;
+}
+.footer section a{
+    transition: all 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+.footer section a:hover{
+    cursor:pointer;
+    color:  firebrick;
+}
+.footer p{
+    float: left;
+}
+
+
