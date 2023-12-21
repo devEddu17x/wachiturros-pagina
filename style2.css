@@ -115,7 +115,7 @@ body {
     grid-area: tercero;
 }
 #dorado{
-    color:  #ffd900;
+    color:  #dadada;
     font-size: 2rem;
 }
 #plata{
@@ -124,7 +124,7 @@ body {
 }
 
 #bronce{
-    color: #ca6a0b;
+    color: #a1a1a1;
     font-size: 2rem;
 }
 
@@ -159,7 +159,7 @@ body {
 /* tops */
 .top-globales:hover{
     cursor:pointer;
-    box-shadow: 0.1rem 0.1rem 0.4rem #110a17;
+    box-shadow: 0.1rem 0.1rem 0.4rem #5C5470;
 }
 .top:hover{
     cursor:pointer;
